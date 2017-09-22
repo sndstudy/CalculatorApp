@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//双方向データバインディングに必要
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { CalcComponent } from './calc/calc.component';
 
@@ -10,9 +13,10 @@ import { CalcComponent } from './calc/calc.component';
     CalcComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [CalcComponent]
 })
 export class AppModule { }

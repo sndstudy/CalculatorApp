@@ -1,3 +1,14 @@
 <p>
   calc works!
 </p>
+
+<div>
+  val1:<input type="text" [(ngModel)]="val1">
+</div>
+<div>
+  val2:<input type="text" [(ngModel)]="val2">
+</div>
+<div>
+  <button (click)="add($event)">add</button>
+</div>
+<span>ans:{{ans}}</span>
