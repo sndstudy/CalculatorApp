@@ -22,4 +22,22 @@ export class CalcComponent implements OnInit {
 
   }
 
+  sub(event){
+
+    this.ans = Number(this.val1) - Number(this.val2)
+
+  }
+
+  mul(event){
+
+    this.ans = Number(this.val1) * Number(this.val2)
+
+  }
+
+  div(event){
+
+    this.ans = Number(this.val1) / Number(this.val2)
+
+  }
+
 }
